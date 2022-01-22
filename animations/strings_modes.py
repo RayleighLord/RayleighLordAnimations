@@ -64,4 +64,4 @@ def animate(j):
 anim = FuncAnimation(fig, animate, frames=ANIMATION_FRAMES, interval=1000 / FPS, blit=False, repeat=True)
 
 plt.show()
-anim.save('string_modes.mp4', writer='ffmpeg', fps=FPS, dpi=180)
+# anim.save('string_modes.mp4', writer='ffmpeg', fps=FPS, dpi=180)
