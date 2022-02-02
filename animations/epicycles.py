@@ -43,9 +43,8 @@ def path(xvals, yvals, frames):
     """
 
     N = len(xvals)
-    dt, dt_anim = 2 * np.pi / N, 2 * np.pi / frames
-    t_path = np.arange(0, 2 * np.pi, dt)
-    t_frames = np.arange(0, 2 * np.pi, dt_anim)
+    t_path = np.linspace(0, 1, N)
+    t_frames = np.linspace(0, 1, frames)
 
     return np.interp(t_frames, t_path, xvals) + 1j * np.interp(t_frames, t_path, yvals)
 
